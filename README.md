@@ -27,6 +27,7 @@ Backend will be available at:
 👉 https://localhost:44350 (Base URL)
 👉 https://localhost:44350/swagger – Explore API docs & test endpoints
 
+But change or 
 Update API base URL in frontend (frontend/utils/api.ts or .env.local):
 
 NEXT_PUBLIC_API_URL=https://localhost:44350/api
