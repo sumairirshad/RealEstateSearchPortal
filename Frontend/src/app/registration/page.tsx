@@ -51,7 +51,7 @@ export default function RegisterPage() {
       if (res.isSuccess) {
         toast.success(res.messages[0]);
         setLoading(false);
-        window.location.href = '/login'
+        router.push('/login')
       } else {
         toast.error(res?.messages![0]);
         setLoading(false);
