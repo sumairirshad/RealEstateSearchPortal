@@ -1,4 +1,4 @@
-const apiUrl = 'https://localhost:44350/Home';
+const apiUrl = process.env.NEXT_PUBLIC_BASE_API_URL!;
 
 export const insertProperty = async <TResponse>( data: any): Promise<TResponse> => {
  

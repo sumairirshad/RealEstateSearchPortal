@@ -1,4 +1,4 @@
-const apiUrl = 'https://localhost:44350/Auth';
+const apiUrl = process.env.NEXT_PUBLIC_API_URL!;
 
 export const userRegistration = async <TResponse>(data: any): Promise<TResponse> => {
   const response = await fetch(`${apiUrl}/register`, {
