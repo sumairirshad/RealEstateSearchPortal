@@ -1,8 +1,8 @@
-const apiUrl = process.env.NEXT_PUBLIC_BASE_API_URL!;
+const apiUrl = process.env.NEXT_PUBLIC_API_URL!;
 
 export const insertProperty = async <TResponse>( data: any): Promise<TResponse> => {
  
-    const response = await fetch(`${apiUrl}/insertProperty`, {
+    const response = await fetch(`${apiUrl}/Home/insertProperty`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -15,7 +15,7 @@ export const insertProperty = async <TResponse>( data: any): Promise<TResponse> 
 
 export const fetchProperties = async <TResponse>( data: any): Promise<TResponse> => {
  
-    const response = await fetch(`${apiUrl}/fetchProperties`, {
+    const response = await fetch(`${apiUrl}/Home/fetchProperties`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ export const fetchProperties = async <TResponse>( data: any): Promise<TResponse>
 
 export const saveFavourites = async <TResponse>( data: any): Promise<TResponse> => {
  
-    const response = await fetch(`${apiUrl}/saveFavourites`, {
+    const response = await fetch(`${apiUrl}/Home/saveFavourites`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export const saveFavourites = async <TResponse>( data: any): Promise<TResponse> 
 
 export const fetchIsPropertyFavourited = async <TResponse>( data: any): Promise<TResponse> => {
  
-    const response = await fetch(`${apiUrl}/fetchIsPropertyFavourited`, {
+    const response = await fetch(`${apiUrl}/Home/fetchIsPropertyFavourited`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ export const fetchIsPropertyFavourited = async <TResponse>( data: any): Promise<
 
 export const FetchDashboardData = async <TResponse>( data: any): Promise<TResponse> => {
  
-    const response = await fetch(`${apiUrl}/fetchDashboardData`, {
+    const response = await fetch(`${apiUrl}/Home/fetchDashboardData`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

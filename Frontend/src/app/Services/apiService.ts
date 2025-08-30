@@ -1,7 +1,7 @@
 const apiUrl = process.env.NEXT_PUBLIC_API_URL!;
 
 export const userRegistration = async <TResponse>(data: any): Promise<TResponse> => {
-  const response = await fetch(`${apiUrl}/register`, {
+  const response = await fetch(`${apiUrl}/Auth/register`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -20,7 +20,7 @@ export const userRegistration = async <TResponse>(data: any): Promise<TResponse>
 
 
 export const userLogin = async <TResponse>(data: any): Promise<TResponse> => {
-  const response = await fetch(`${apiUrl}/login`, {
+  const response = await fetch(`${apiUrl}/Auth/login`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
